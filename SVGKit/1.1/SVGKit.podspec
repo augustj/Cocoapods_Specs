@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
   s.ios.exclude_files = 'Source/Vendor/Lumberjack/*{.h,m}'
   s.libraries = 'xml2'
   s.framework = 'QuartzCore', 'CoreText', 'CoreImage', 'CoreGraphics', 'UIKit'
-  s.prefix_header_contents = '#import "DDLog.h"', 'const int ddLogLevel = LOG_LEVEL_INFO;'
+  s.prefix_header_contents = '#import "DDLog.h"', 'extern int ddLogLevel'
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
 end
