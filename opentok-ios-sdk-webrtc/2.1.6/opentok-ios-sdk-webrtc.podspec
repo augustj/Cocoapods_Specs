@@ -2,24 +2,22 @@ Pod::Spec.new do |s|
 
   s.name         = "opentok-ios-sdk-webrtc"
   s.version      = "2.1.6"
-  s.summary      = "A podspec that wraps the OpenTok iOS WebRTC SDK"
+  s.summary      = "A podspec that wraps the OpenTok iOS WebRTC SDK and only links against ARM"
 
   s.description  = <<-DESC
                    Don't you wish you could still run the simulator with the OpenTok iOS WebRTC SDK?
 
-                   * Now you can!  The opentok lib will only be linked against for arm architectures.
-                   * Simple wrap your opentok code up in something like a service with a protocol. 
-                   * Then write a second dummy implementation that conforms to the protocol and load that when running on the simulator.
+                   * Now you can!  The opentok lib will only be linked against for ARM architectures.
+                   * Simply wrap your opentok code up in something like a service with a protocol. 
+                   * Then write a second dummy implementation that conforms to the protocol and load
+                   * that when running on the simulator.
                    DESC
 
   s.homepage     = "http://github.com/augustj"
  
   s.license      = 'MIT (example)'
-  
 
   s.author       = { "August Jaenicke" => "august@carbonfive.com" }
-  # s.authors      = { "August Jaenicke" => "august@carbonfive.com"}
-  # s.author       = 'August Jaenicke'
 
   s.platform     = :ios, '6.1'
 
